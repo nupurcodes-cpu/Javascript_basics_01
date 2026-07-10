@@ -76,3 +76,14 @@ and changing it now would break millions of existing websites.
 So JavaScript keeps this behavior for backward compatibility.
 */
 
+/* typeof operator result of each datatype
+undefined = "undefined"
+null = "object"    //the famous bug
+boolean = "boolean"
+number = "number"
+string = "string"
+symbol = "symbol"
+object = "object"
+array = "object"
+function = "object-function" //its a function but under the hood object
+*/
