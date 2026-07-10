@@ -25,3 +25,10 @@
 /*   === compares value + it's datatype    */
 console.log("2" === 2) //false 2 & 2 are same but datatype different
 
+/* null vs undefined
+   null == undefined   //true
+   null === undefined  //false
+becoz, 
+    typeof undefined;  //undefined
+    typeof null;       //object //hisorical bug in javascript
+*/

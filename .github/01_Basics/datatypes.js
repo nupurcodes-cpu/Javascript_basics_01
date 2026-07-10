@@ -2,6 +2,7 @@ let name = "Nupur"
 let age = 22
 let isemployed = false
 
+/*Primitive
 //number = 2 to power 53
 //string => "" or '' or ``
 //bigint => used to represent integers larger than Number can safely store. used in stock market.
@@ -35,7 +36,13 @@ let isemployed = false
        o/p : false
     */
 
-//object => stores multiple values
+
+/*Reference (Non Primitive)
+
+//Array => strores multiple values of same datatype
+    /* const heros = ["shaktiman", "Batman", "Naagraj"]
+
+//object => stores multiple values of different datatypes
     /* let Student = {
                       name = "Nupur"
                       Age = 22
@@ -48,6 +55,12 @@ Student
  ├── Branch
  ├── Marks
  └── Attendance 
+
+//functions 
+const myFunction = function(){
+    console.log("Hello World");
+    }
+console.log(typeof myFunction)
 */
 
 console.log(typeof "Nupur"); //string
@@ -62,3 +75,4 @@ This bug became part of the language,
 and changing it now would break millions of existing websites.
 So JavaScript keeps this behavior for backward compatibility.
 */
+
