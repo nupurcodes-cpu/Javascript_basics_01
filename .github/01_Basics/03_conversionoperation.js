@@ -44,8 +44,8 @@ console.log(negvalue)
 
 // console.log("1" + 2)
 // console.log(1 + "2")
-// console.log("1" + 2 + 2)  //122 ( "" / String is there in starting only then the whole input is treated as String)
-// console.log(1 + 2 + "2")  //32 
+console.log("1" + 2 + 2)  //122 ( "" / String is there in starting only then the whole input is treated as String)
+console.log(1 + 2 + "2")  //32 
 
 let x = 3;
 const y = x++;
