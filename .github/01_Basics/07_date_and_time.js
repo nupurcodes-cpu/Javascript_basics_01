@@ -133,6 +133,31 @@ let myCreatedDate = new Date(2023, 0, 23, 5, 3)
 console.log(myCreatedDate.toLocaleString());    //1/23/2023, 5:03:00 AM
 
 
+//++++++++++++++++++++++++++++++++++++++++++ Time ++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// 1. Date.now() 
+// What it does: Is a static method that instantly gives you the current timestamp in milliseconds right now, counting 
+// from the Unix Epoch (January 1, 1970).
 
+let myTimestamp = Date.now()
+console.log(myTimestamp);   //1787490030706
+console.log(Math.floor(Date.now()/1000));   //1787490090  (Dividing it by 1000 converts those milliseconds into seconds.)
+/* Why it's used: Many external APIs, databases, or backend systems (like JSON Web Tokens or Unix server clocks) expect 
+timestamps in seconds rather than milliseconds. This line of code converts JavaScript's default millisecond format into standard Unix seconds.
+ */
 
+/* Why it's used: It is a fast, lightweight way to get a numeric representation of the current exact moment without 
+needing to create a full new Date() object instance.
+ */
+
+// 2. .getTime() 
+// extracts its millisecond timestamp.
+console.log(myCreatedDate.getTime());   //1674450180000
+
+//`${newDate.getDay()} and the time is`  (mosytly people preer to write this in string interpolation)
+
+//.toLocaleString() can be modified making object format, so we can customize our output
+
+newDate.toLocaleString('default', {
+    daysOfWeek: "long"
+})
