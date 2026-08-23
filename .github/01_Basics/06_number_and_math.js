@@ -41,7 +41,7 @@ What it is: JavaScript uses a 64-bit floating-point format (IEEE 754) for all nu
 The Precision Limit: It can only safely keep about 17 decimal places of precision. Anything beyond that suffers from rounding errors.
  */
 
-2. Static Properties (Constants):
+/* 2. Static Properties (Constants):
 These are helper limits built directly into the Number blueprint.
 
 # Number.MAX_SAFE_INTEGER & Number.MIN_SAFE_INTEGER
@@ -64,8 +64,8 @@ or maximum value in a large dataset.
 # Number.POSITIVE_INFINITY / NEGATIVE_INFINITY / NaN
 Real-Life Use Case: Handling math overflow errors. If a calculation results in a number too massive to 
 compute, JS returns Infinity instead of crashing your app.
-
-3. Static Methods (Helpers on Number):
+ */
+/* 3. Static Methods (Helpers on Number):
 
 # Number.isInteger() & Number.isSafeInteger()
 Real-Life Use Case: Validating form inputs. 
@@ -103,7 +103,7 @@ correctly depending on the user's country (adding commas or changing currency sy
 
 Real-life example:
 let bankBalance = 1500000;
-console.log(bankBalance.toLocaleString("en-US")); // "1,500,000"
+console.log(bankBalance.toLocaleString("en-US")); // "1,500,000" */
 //+++++++++++++++++++++++++++++++ Math +++++++++++++++++++++++++++++++++++++++++++++++
 
 /* Math is a built-in library/object that has methods for mathematical operations */
